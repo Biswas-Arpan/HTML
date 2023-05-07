@@ -1,0 +1,13 @@
+Slider: https://devsnap.me/css-sliders
+Slider: https://colorlib.com/wp/best-css-sliders/
+
+range-slider: https://blog.logrocket.com/creating-custom-css-range-slider-javascript-upgrades/
+
+css-carousels: https://freefrontend.com/css-carousels/
+
+
+mobile-navbar: https://freefrontend.com/css-mobile-menus/
+
+
+
+toggle: https://accordionslider.com/
