@@ -7,37 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 
 <body>
     <header class="">
-        <div class="wrapper">
+        <div class="navbar-section">
+            <div id="brand"><a href="/">MyCompany</a></div>
             <nav>
-                <div class="container">
-                    <div class="phone">
-                        <div class="content">
-
-                            <nav role="navigation">
-                                <div id="menuToggle">
-                                    <input type="checkbox" />
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <ul id="menu">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Info</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li id="login"><a href="/login">Login</a></li>
+                    <li id="signup"><a href="/signup">Signup</a></li>
+                </ul>
             </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li id="login"><a href="/login">Login</a></li>
+                    <li id="signup"><a href="/signup">Signup</a></li>
+                </ul>
+            </div>
         </div>
 
-
+        <!-- start slider section here -->
         <div class="herosection">
             <div class="sliders-container">
                 <div class="slider">
@@ -108,7 +110,321 @@
                 </div>
             </div>
         </div>
+        <!-- end slider section here -->
+
     </header>
+    <!-- start card section here -->
+    <section>
+        <div class="cardContainer">
+            <div class="cardSlider owl-carousel">
+                <div class="card">
+                    <div class="img">
+                        <img src="https://crackingitjobs.com/wp-content/uploads/2022/11/book1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Uncommon Quiz/Test Series for AP/GT Computer<span id="dots1">...</span><span id="more1">
+                                Science For High School (9 book series)</span>
+                        </div>
+                        <a onclick="moreFunctionBtnCard_1()" id="myBtn1">Read More</a>
+                        <p>
+                            Computer Science questions are designed to challenge the high school students who are
+                            pursuing
+                            AP
+                            computer science.
+                        </p>
+                        <h4>₹ 2,188.00</h4>
+                        <div>
+                            <a class="redBtn" href="https://www.amazon.in/dp/B09W1MNF93" target="_blank"> Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="https://crackingitjobs.com/wp-content/uploads/2022/11/Book3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Uncommon (Poccomu) Questions for College Tests_Quiz_Interviews (7 book series)</span>
+                        </div>
+                        <a onclick="moreFunctionBtnCard_2()" id="myBtn2">Read More</a>
+                        <p>
+                            Poccomu Interview series has been designed to help the students as well as professionals who
+                            have to
+                            take coding tests.
+                        </p>
+                        <h4>₹ 1,725.00</h4>
+                        <div>
+                            <a class="redBtn" href="https://www.amazon.in/dp/B09XDT3G9H" target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="https://crackingitjobs.com/wp-content/uploads/2022/11/Book2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            AP/GT Test Series For High School Physics<span id="dots3">...</span><span id="more3"> (9
+                                book series)</span>
+                        </div>
+                        <a onclick="moreFunctionBtnCard_3()" id="myBtn3">Read More</a>
+                        <p>
+                            Physics Mechanics questions are designed to challenge the high school students who are
+                            pursuing
+                            AP
+                            Physics to excel.
+
+                        </p>
+                        <h4>₹ 2,131.00</h4>
+                        <div>
+                            <a class="redBtn" href="https://www.amazon.in/dp/B0BJ1F5JRB" target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="https://crackingitjobs.com/wp-content/uploads/2022/11/Mathematics.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            AAP/GT Test Series For High School Maths <span id="dots4">...</span><span id="more4"> (8
+                                book series)</span>
+                        </div>
+                        <a onclick="moreFunctionBtnCard_4()" id="myBtn4">Read More</a>
+                        <p>
+                            Mathematics questions are designed to challenge the high school students who are pursuing AP
+                            Mathematics to excel.
+
+                        </p>
+                        <h4>₹ 1,967.00</h4>
+                        <div>
+                            <a class="redBtn" href="https://www.amazon.in/dp/B0BLK1ZDD8" target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="https://crackingitjobs.com/wp-content/uploads/2022/11/Microbiology.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            AP/GT Problems For High School Microbiology <span id="dots5">...</span><span id="more5">
+                                Vol-01</span>
+                        </div>
+                        <a onclick="moreFunctionBtnCard_5()" id="myBtn5">Read More</a>
+                        <p>
+                            Microbiology questions are designed to challenge the high school students who are pursuing
+                            AP
+                            Microbiology to excel.
+                        </p>
+                        <h4>₹ 247.00</h4>
+                        <div>
+                            <a class="redBtn"
+                                href="https://www.amazon.in/Problems-High-School-Microbiology-Vol-01-ebook/dp/B0BKLTWW7V"
+                                target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_nav">
+                <button class="am-next">Next</button>
+                <button class="am-prev">Previous</button>
+            </div>
+        </div>
+    </section>
+    <!-- end card section here -->
+    <!-- <section>
+        <div class="cardContainer">
+            <div class="cardSlider owl-carousel">
+                <div class="card">
+                    <div class="headImg">
+                        <h4>1</h4>
+                    </div>
+                    <div class="img">
+                        <img src="https://png.pngtree.com/png-clipart/20210613/original/pngtree-gray-silhouette-avatar-png-image_6404679.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Sujannya Khan
+                        </div>
+                        <p><b>Grade: </b>B</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="headImg">
+                        <h4>2</h4>
+                    </div>
+                    <div class="img">
+                        <img src="https://png.pngtree.com/png-clipart/20210613/original/pngtree-gray-silhouette-avatar-png-image_6404679.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Shashi Kumar
+                        </div>
+                        <p><b>Grade: </b>B</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="headImg">
+                        <h4>3</h4>
+                    </div>
+                    <div class="img">
+                        <img src="https://png.pngtree.com/png-clipart/20210613/original/pngtree-gray-silhouette-avatar-png-image_6404679.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Shubhamoy Paul
+                        </div>
+                        <p><b>Grade: </b>A</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="headImg">
+                        <h4>4</h4>
+                    </div>
+                    <div class="img">
+                        <img src="https://png.pngtree.com/png-clipart/20210613/original/pngtree-gray-silhouette-avatar-png-image_6404679.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Jayabani Ghosh
+                        </div>
+                        <p><b>Grade: </b>A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+        $(".cardSlider").owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+            navText: [$('.am-next'),$('.am-prev')],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                },
+                1500: {
+                    items: 3
+                }
+            }
+        });
+        // $(".cardSlider").owlCarousel({
+        //     loop: true,
+        //     nav: true,
+        //     autoplay: true,
+        //     autoplayTimeout: 2000, //2000ms = 2s;
+        //     autoplayHoverPause: true,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         480: {
+        //             items: 2
+        //         },
+        //         600: {
+        //             items: 2
+        //         },
+        //         1000: {
+        //             items: 3
+        //         },
+        //         2000: {
+        //             items: 3
+        //         }
+        //     }
+        // });
+        function moreFunctionBtnCard_1() {
+            let dots = document.getElementById("dots1");
+            let moreText = document.getElementById("more1");
+            let btnText = document.getElementById("myBtn1");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function moreFunctionBtnCard_2() {
+            let dots = document.getElementById("dots2");
+            let moreText = document.getElementById("more2");
+            let btnText = document.getElementById("myBtn2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function moreFunctionBtnCard_3() {
+            let dots = document.getElementById("dots3");
+            let moreText = document.getElementById("more3");
+            let btnText = document.getElementById("myBtn3");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function moreFunctionBtnCard_4() {
+            let dots = document.getElementById("dots4");
+            let moreText = document.getElementById("more4");
+            let btnText = document.getElementById("myBtn4");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function moreFunctionBtnCard_5() {
+            let dots = document.getElementById("dots5");
+            let moreText = document.getElementById("more5");
+            let btnText = document.getElementById("myBtn5");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 
 </html>
