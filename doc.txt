@@ -1,5 +1,6 @@
 Slider: https://devsnap.me/css-sliders
 Slider: https://colorlib.com/wp/best-css-sliders/
+Slider With Jquery: 
 
 range-slider: https://blog.logrocket.com/creating-custom-css-range-slider-javascript-upgrades/
 
